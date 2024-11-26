@@ -171,23 +171,21 @@ def get_user_summary():
         latest_message = r.get('latest_message')
 
         if latest_message:
-            # Misalnya, latest_message berisi JSON dalam format:
-            # {"user_id": 1, "total_amount": 1000.50, "amount_transaction": 10, "last_date_transaction": "2024-11-26 12:34:56"}
-            # message_data = latest_message.decode('utf-8')  # Decode untuk mendapatkan string
-
-            # Parsing message_data jika menggunakan JSON
+            # Decode untuk mendapatkan string, lalu parsing JSON
             import json
-            message_data = json.loads(message_data)
+            from datetime import datetime
+            message_data = json.loads(latest_message.decode('utf-8'))
 
-            # Ambil data dari JSON
-            user_id = message_data.get("user_id")
-            total_amount = message_data.get("total_amount")
-            amount_transaction = message_data.get("amount_transaction")
-            last_date_transaction = message_data.get("last_date_transaction")
-
-            # Validasi input, jika data yang diperlukan tidak ada
-            if not user_id or not total_amount or not amount_transaction or not last_date_transaction:
-                return jsonify({"message": "Missing required fields in Redis data"}), 400
+            # Ambil dan validasi data
+            try:
+                user_id = int(message_data.get("user_id"))
+                total_amount = float(message_data.get("total_amount"))
+                amount_transaction = int(message_data.get("amount_transaction"))
+                last_date_transaction = datetime.strptime(
+                    message_data.get("last_date_transaction"), "%Y-%m-%d %H:%M:%S"
+                )
+            except (ValueError, TypeError, KeyError) as e:
+                return jsonify({"message": f"Invalid data format: {str(e)}"}), 400
 
             # Membuat koneksi ke database
             connection = get_connection()
@@ -209,12 +207,7 @@ def get_user_summary():
                 """
                 cursor.execute(update_query, (total_amount, amount_transaction, last_date_transaction, user_id))
                 connection.commit()
-
-                # Menutup cursor dan koneksi
-                cursor.close()
-                connection.close()
-
-                return jsonify({"message": "Data successfully updated in database."}), 200
+                message = "Data successfully updated in database."
             else:
                 # Jika data belum ada, lakukan INSERT
                 insert_query = """
@@ -224,12 +217,13 @@ def get_user_summary():
                 request_insert = (user_id, total_amount, amount_transaction, last_date_transaction)
                 cursor.execute(insert_query, request_insert)
                 connection.commit()
+                message = "Data successfully saved to database."
 
-                # Menutup cursor dan koneksi
-                cursor.close()
-                connection.close()
+            # Menutup cursor dan koneksi
+            cursor.close()
+            connection.close()
 
-                return jsonify({"message": "Data successfully saved to database."}), 200
+            return jsonify({"message": message}), 200
 
         else:
             return jsonify({"message": "No message found in Redis."}), 404
