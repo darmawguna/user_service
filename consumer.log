@@ -1,0 +1,148 @@
+2024-11-26 13:19:50,825 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-26 13:19:50,826 [INFO]: [33mPress CTRL+C to quit[0m
+2024-11-26 13:19:50,827 [INFO]:  * Restarting with stat
+2024-11-26 13:19:52,269 [WARNING]:  * Debugger is active!
+2024-11-26 13:19:52,280 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 13:20:52,497 [INFO]: 127.0.0.1 - - [26/Nov/2024 13:20:52] "[33mPOST /api/transactions/create HTTP/1.1[0m" 404 -
+2024-11-26 13:24:16,489 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-26 13:24:16,490 [INFO]: [33mPress CTRL+C to quit[0m
+2024-11-26 13:24:16,492 [INFO]:  * Restarting with stat
+2024-11-26 13:24:18,048 [WARNING]:  * Debugger is active!
+2024-11-26 13:24:18,058 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 13:25:00,223 [INFO]:  * Detected change in 'A:\\kuliah-SOA\\UTS\\user_service\\app.py', reloading
+2024-11-26 13:25:00,476 [INFO]:  * Restarting with stat
+2024-11-26 13:25:02,596 [WARNING]:  * Debugger is active!
+2024-11-26 13:25:02,606 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 13:25:04,624 [INFO]:  * Detected change in 'A:\\kuliah-SOA\\UTS\\user_service\\app.py', reloading
+2024-11-26 13:25:04,680 [INFO]:  * Restarting with stat
+2024-11-26 13:25:06,560 [WARNING]:  * Debugger is active!
+2024-11-26 13:25:06,580 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 13:25:09,616 [INFO]:  * Detected change in 'A:\\kuliah-SOA\\UTS\\user_service\\app.py', reloading
+2024-11-26 13:25:09,681 [INFO]:  * Restarting with stat
+2024-11-26 13:25:11,273 [WARNING]:  * Debugger is active!
+2024-11-26 13:25:11,283 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 13:25:13,299 [INFO]:  * Detected change in 'A:\\kuliah-SOA\\UTS\\user_service\\app.py', reloading
+2024-11-26 13:25:13,357 [INFO]:  * Restarting with stat
+2024-11-26 13:25:14,602 [WARNING]:  * Debugger is active!
+2024-11-26 13:25:14,612 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 13:25:18,633 [INFO]:  * Detected change in 'A:\\kuliah-SOA\\UTS\\user_service\\app.py', reloading
+2024-11-26 13:25:18,695 [INFO]:  * Restarting with stat
+2024-11-26 13:25:20,221 [WARNING]:  * Debugger is active!
+2024-11-26 13:25:20,233 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 13:25:38,705 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-26 13:25:38,705 [INFO]: [33mPress CTRL+C to quit[0m
+2024-11-26 13:25:38,706 [INFO]:  * Restarting with stat
+2024-11-26 13:25:40,026 [WARNING]:  * Debugger is active!
+2024-11-26 13:25:40,036 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 13:31:55,851 [INFO]:  * Detected change in 'A:\\kuliah-SOA\\UTS\\user_service\\app.py', reloading
+2024-11-26 13:31:57,186 [INFO]:  * Restarting with stat
+2024-11-26 13:31:58,830 [WARNING]:  * Debugger is active!
+2024-11-26 13:31:58,844 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 13:32:37,030 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-26 13:32:37,030 [INFO]: [33mPress CTRL+C to quit[0m
+2024-11-26 13:32:37,031 [INFO]:  * Restarting with stat
+2024-11-26 13:32:38,314 [WARNING]:  * Debugger is active!
+2024-11-26 13:32:38,325 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 13:36:34,388 [INFO]:  * Detected change in 'A:\\kuliah-SOA\\UTS\\user_service\\app.py', reloading
+2024-11-26 13:36:34,488 [INFO]:  * Restarting with stat
+2024-11-26 13:36:36,088 [WARNING]:  * Debugger is active!
+2024-11-26 13:36:36,099 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 13:37:24,289 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-26 13:37:24,289 [INFO]: [33mPress CTRL+C to quit[0m
+2024-11-26 13:37:34,486 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-26 13:37:34,486 [INFO]: [33mPress CTRL+C to quit[0m
+2024-11-26 13:37:34,488 [INFO]:  * Restarting with stat
+2024-11-26 13:39:35,823 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-26 13:39:35,823 [INFO]: [33mPress CTRL+C to quit[0m
+2024-11-26 13:39:35,826 [INFO]:  * Restarting with stat
+2024-11-26 13:39:37,262 [WARNING]:  * Debugger is active!
+2024-11-26 13:39:37,281 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 13:40:02,918 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-26 13:40:02,919 [INFO]: [33mPress CTRL+C to quit[0m
+2024-11-26 13:40:02,921 [INFO]:  * Restarting with stat
+2024-11-26 13:40:04,609 [WARNING]:  * Debugger is active!
+2024-11-26 13:40:04,623 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 13:40:42,222 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-26 13:40:42,224 [INFO]: [33mPress CTRL+C to quit[0m
+2024-11-26 13:40:42,226 [INFO]:  * Restarting with stat
+2024-11-26 13:40:43,733 [WARNING]:  * Debugger is active!
+2024-11-26 13:40:43,744 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 13:41:21,614 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-26 13:41:21,615 [INFO]: [33mPress CTRL+C to quit[0m
+2024-11-26 13:41:21,620 [INFO]:  * Restarting with stat
+2024-11-26 13:44:51,233 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-26 13:44:51,233 [INFO]: [33mPress CTRL+C to quit[0m
+2024-11-26 13:44:51,235 [INFO]:  * Restarting with stat
+2024-11-26 13:44:52,560 [WARNING]:  * Debugger is active!
+2024-11-26 13:44:52,570 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 13:46:21,766 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-11-26 13:46:21,767 [INFO]: [33mPress CTRL+C to quit[0m
+2024-11-26 13:47:11,565 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-26 13:47:11,565 [INFO]: [33mPress CTRL+C to quit[0m
+2024-11-26 13:47:11,566 [INFO]:  * Restarting with stat
+2024-11-26 13:47:12,836 [WARNING]:  * Debugger is active!
+2024-11-26 13:47:12,846 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 14:01:46,548 [WARNING]:  * Debugger is active!
+2024-11-26 14:01:46,558 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 14:01:56,398 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-26 14:01:56,398 [INFO]: [33mPress CTRL+C to quit[0m
+2024-11-26 14:01:56,399 [INFO]:  * Restarting with stat
+2024-11-26 14:01:57,680 [WARNING]:  * Debugger is active!
+2024-11-26 14:01:57,690 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 14:02:23,196 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-26 14:02:23,197 [INFO]: [33mPress CTRL+C to quit[0m
+2024-11-26 14:02:23,198 [INFO]:  * Restarting with stat
+2024-11-26 14:02:24,620 [WARNING]:  * Debugger is active!
+2024-11-26 14:02:24,630 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 14:03:30,931 [INFO]:  * Detected change in 'A:\\kuliah-SOA\\UTS\\user_service\\app.py', reloading
+2024-11-26 14:03:31,005 [INFO]:  * Restarting with stat
+2024-11-26 14:03:33,075 [WARNING]:  * Debugger is active!
+2024-11-26 14:03:33,094 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 14:03:37,081 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-26 14:03:37,081 [INFO]: [33mPress CTRL+C to quit[0m
+2024-11-26 14:03:37,082 [INFO]:  * Restarting with stat
+2024-11-26 14:03:38,351 [WARNING]:  * Debugger is active!
+2024-11-26 14:03:38,361 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 14:07:58,641 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-26 14:07:58,641 [INFO]: [33mPress CTRL+C to quit[0m
+2024-11-26 14:07:58,644 [INFO]:  * Restarting with stat
+2024-11-26 14:08:00,172 [WARNING]:  * Debugger is active!
+2024-11-26 14:08:00,182 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 14:09:53,963 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-11-26 14:09:53,963 [INFO]: [33mPress CTRL+C to quit[0m
+2024-11-26 14:09:53,964 [INFO]:  * Restarting with stat
+2024-11-26 14:09:54,007 [INFO]: Received message: b'\x84\xa7user_id\x02\xb2amount_transaction\x05\xactotal_amount\xcbAB\x9d\xa0\x00\x00\x00\x00\xb5last_date_transaction\xb32024-11-26 04:10:43'
+2024-11-26 14:09:54,008 [INFO]: Parsed Msgpack data: {'user_id': 2, 'amount_transaction': 5, 'total_amount': 2440000.0, 'last_date_transaction': '2024-11-26 04:10:43'}
+2024-11-26 14:09:54,008 [ERROR]: Message processing failed permanently: b'\x84\xa7user_id\x02\xb2amount_transaction\x05\xactotal_amount\xcbAB\x9d\xa0\x00\x00\x00\x00\xb5last_date_transaction\xb32024-11-26 04:10:43'
+2024-11-26 14:09:54,008 [INFO]: Received message: b'\x84\xa7user_id\x03\xb2amount_transaction\x03\xactotal_amount\xcbA4\xc0\x80\x00\x00\x00\x00\xb5last_date_transaction\xb32024-11-26 04:14:17'
+2024-11-26 14:09:54,008 [INFO]: Parsed Msgpack data: {'user_id': 3, 'amount_transaction': 3, 'total_amount': 1360000.0, 'last_date_transaction': '2024-11-26 04:14:17'}
+2024-11-26 14:09:54,008 [ERROR]: Message processing failed permanently: b'\x84\xa7user_id\x03\xb2amount_transaction\x03\xactotal_amount\xcbA4\xc0\x80\x00\x00\x00\x00\xb5last_date_transaction\xb32024-11-26 04:14:17'
+2024-11-26 14:09:54,008 [INFO]: Received message: b'\x84\xa7user_id\x04\xb2amount_transaction\x01\xactotal_amount\xcb@\xedL\x00\x00\x00\x00\x00\xb5last_date_transaction\xb32024-11-26 05:26:02'
+2024-11-26 14:09:54,008 [INFO]: Parsed Msgpack data: {'user_id': 4, 'amount_transaction': 1, 'total_amount': 60000.0, 'last_date_transaction': '2024-11-26 05:26:02'}
+2024-11-26 14:09:54,008 [ERROR]: Message processing failed permanently: b'\x84\xa7user_id\x04\xb2amount_transaction\x01\xactotal_amount\xcb@\xedL\x00\x00\x00\x00\x00\xb5last_date_transaction\xb32024-11-26 05:26:02'
+2024-11-26 14:09:55,237 [WARNING]:  * Debugger is active!
+2024-11-26 14:09:55,248 [INFO]:  * Debugger PIN: 813-679-014
+2024-11-26 14:10:04,289 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-26 14:10:04,289 [INFO]: [33mPress CTRL+C to quit[0m
+2024-11-26 14:10:04,290 [INFO]:  * Restarting with stat
+2024-11-26 14:10:05,555 [WARNING]:  * Debugger is active!
+2024-11-26 14:10:05,566 [INFO]:  * Debugger PIN: 813-679-014
