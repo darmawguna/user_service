@@ -3,25 +3,25 @@ from confluent_kafka import Consumer, KafkaException, KafkaError
 import redis
 import json
 
-# Koneksi ke Redis yang berjalan di localhost (port 6379)
+
 r = redis.StrictRedis(host='localhost', port=6379, db=0)
 
-# Konfigurasi Consumer untuk Redpanda (Kafka)
+
 conf = {
-    'bootstrap.servers': 'localhost:9092',  # Redpanda di Docker
+    'bootstrap.servers': 'localhost:9092', 
     'group.id': 'transaction-consumer-group',
     'auto.offset.reset': 'earliest',
 }
 
 consumer = Consumer(conf)
-topic = 'user_summary'  # Nama topik Kafka yang akan dikonsumsi
+topic = 'user_summary'  
 
 def consume_message():
     try:
-        consumer.subscribe([topic])  # Subscribe ke topik Kafka
+        consumer.subscribe([topic])  
 
         while True:
-            msg = consumer.poll(timeout=1.0)  # Timeout 1 detik untuk polling
+            msg = consumer.poll(timeout=1.0)  
             if msg is None:
                 continue
             elif msg.error():
@@ -31,13 +31,13 @@ def consume_message():
                     raise KafkaException(msg.error())
             else:
                 try:
-                    # Dekode pesan dari MsgPack
-                    message_data = msgpack.unpackb(msg.value(), raw=False)  # Mendekode Msgpack data
+                    
+                    message_data = msgpack.unpackb(msg.value(), raw=False)  
                     print(f"Received message: {message_data}")
 
-                    # Validasi apakah data berupa dictionary
+                  
                     if isinstance(message_data, dict):
-                        # Ubah dictionary menjadi JSON
+                        
                         message_data_json = json.dumps(message_data)
                         
                         # Simpan data ke Redis
