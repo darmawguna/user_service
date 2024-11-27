@@ -1,0 +1,67 @@
+tags:
+  - Users
+summary: Endpoint untuk memperbarui data pengguna berdasarkan user_id
+description: >
+  Endpoint ini digunakan untuk memperbarui informasi pengguna berdasarkan `user_id`. Anda harus mengirimkan `full_name`, `email`, dan `phone_number` dalam request body.
+consumes:
+  - application/json
+produces:
+  - application/json
+parameters:
+  - name: user_id
+    in: path
+    required: true
+    type: integer
+    description: ID pengguna yang akan diperbarui
+  - name: body
+    in: body
+    required: true
+    schema:
+      type: object
+      properties:
+        full_name:
+          type: string
+          example: "John Doe"
+        email:
+          type: string
+          example: "john.doe@example.com"
+        phone_number:
+          type: string
+          example: "+123456789"
+      required:
+        - full_name
+        - email
+        - phone_number
+responses:
+  200:
+    description: Pengguna berhasil diperbarui
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "User successfully updated"
+  400:
+    description: Input tidak valid atau email sudah ada
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "Invalid email format"
+  404:
+    description: Pengguna tidak ditemukan
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "User not found"
+  500:
+    description: Terjadi kesalahan pada server
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "Error updating data"

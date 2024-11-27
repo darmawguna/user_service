@@ -1,0 +1,65 @@
+tags:
+  - Users
+summary: Endpoint untuk mendapatkan ringkasan transaksi pengguna
+description: >
+  Endpoint ini digunakan untuk mengambil ringkasan transaksi pengguna berdasarkan `user_id`.
+consumes:
+  - application/json
+produces:
+  - application/json
+parameters:
+  - name: user_id
+    in: path
+    required: true
+    type: integer
+    description: ID pengguna untuk mendapatkan ringkasan transaksi
+responses:
+  200:
+    description: Ringkasan transaksi pengguna berhasil diambil
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "success get transaction Summary"
+        data:
+          type: object
+          properties:
+            amount_transaction:
+              type: integer
+              example: 3
+            last_date_transaction:
+              type: string
+              format: date-time
+              example: "2024-11-26 22:56:39"
+            total_amount:
+              type: number
+              format: float
+              example: 17000.0
+            user_id:
+              type: integer
+              example: 1
+  400:
+    description: Konten tidak sesuai atau kesalahan dalam respons
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "Unexpected content type"
+  504:
+    description: Permintaan ke API eksternal melebihi batas waktu
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "Request timeout"
+  500:
+    description: Terjadi kesalahan pada server
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "Error while contacting external API"

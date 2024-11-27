@@ -1,0 +1,66 @@
+tags:
+  - Users
+summary: Endpoint untuk membuat pengguna baru
+description: >
+  Endpoint ini digunakan untuk membuat pengguna baru. Anda harus mengirimkan `full_name`, `email`, dan `phone_number` dalam request body.
+consumes:
+  - application/json
+produces:
+  - application/json
+parameters:
+  - name: body
+    in: body
+    required: true
+    schema:
+      type: object
+      properties:
+        full_name:
+          type: string
+          example: "John Doe"
+        email:
+          type: string
+          example: "john.doe@example.com"
+        phone_number:
+          type: string
+          example: "+123456789"
+      required:
+        - full_name
+        - email
+        - phone_number
+responses:
+  201:
+    description: Pengguna berhasil dibuat
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "User successfully created"
+        datas:
+          type: object
+          properties:
+            full_name:
+              type: string
+              example: "John Doe"
+            email:
+              type: string
+              example: "john.doe@example.com"
+            phone_number:
+              type: string
+              example: "+123456789"
+  400:
+    description: Request body tidak valid atau email sudah ada
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "Invalid email format"  
+  500:
+    description: Terjadi kesalahan pada server
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "Error inserting data"

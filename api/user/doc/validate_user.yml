@@ -1,0 +1,40 @@
+tags:
+  - Users
+summary: Endpoint untuk memvalidasi keberadaan pengguna berdasarkan user_id
+description: >
+  Endpoint ini digunakan untuk memeriksa apakah pengguna dengan `user_id` ada dalam database.
+consumes:
+  - application/json
+produces:
+  - application/json
+parameters:
+  - name: user_id
+    in: path
+    required: true
+    type: integer
+    description: ID pengguna yang akan divalidasi
+responses:
+  200:
+    description: Pengguna ditemukan
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "true"
+  404:
+    description: Pengguna tidak ditemukan
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "false"
+  500:
+    description: Terjadi kesalahan pada server
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "Error checking user"

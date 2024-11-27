@@ -1,0 +1,40 @@
+tags:
+  - Users
+summary: Endpoint untuk menghapus pengguna berdasarkan user_id
+description: >
+  Endpoint ini digunakan untuk menghapus pengguna berdasarkan `user_id`.
+consumes:
+  - application/json
+produces:
+  - application/json
+parameters:
+  - name: user_id
+    in: path
+    required: true
+    type: integer
+    description: ID pengguna yang akan dihapus
+responses:
+  200:
+    description: Pengguna berhasil dihapus
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "User successfully deleted"
+  404:
+    description: Pengguna tidak ditemukan
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "User not found"
+  500:
+    description: Terjadi kesalahan pada server
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "Error deleting data"
