@@ -1,0 +1,57 @@
+tags:
+  - Users
+summary: Endpoint untuk mendapatkan ringkasan transaksi pengguna berdasarkan user_id di database user_summary
+description: >
+  Endpoint ini digunakan untuk mendapatkan ringkasan transaksi dari pengguna berdasarkan `user_id`. 
+  Data yang dikembalikan meliputi total jumlah transaksi, total nilai transaksi, dan tanggal transaksi terakhir.
+consumes:
+  - application/json
+produces:
+  - application/json
+parameters:
+  - name: user_id
+    in: path
+    required: true
+    type: integer
+    description: ID pengguna yang ingin diambil ringkasan transaksinya
+responses:
+  200:
+    description: Ringkasan transaksi berhasil diambil
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "success get transaction Summary"
+        data:
+          type: object
+          properties:
+            amount_transaction:
+              type: integer
+              example: 1
+              description: Jumlah transaksi pengguna
+            last_date_transaction:
+              type: string
+              format: date-time
+              example: "Wed, 04 Dec 2024 06:45:13 GMT"
+              description: Tanggal terakhir pengguna melakukan transaksi
+            total_amount:
+              type: string
+              example: "3000.00"
+              description: Total nilai transaksi pengguna
+  404:
+    description: Pengguna tidak ditemukan
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "User not found"
+  500:
+    description: Terjadi kesalahan pada server
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "Error retrieving data"
